@@ -32,8 +32,8 @@ public class Chamado {
         status.trim().toUpperCase();
 
         if (!status.equals("ABERTO")
-            && !status.equals("RESOLVIDO")
-            && !status.equals("CANCELADO")){
+                && !status.equals("RESOLVIDO")
+                && !status.equals("CANCELADO")){
             throw new IllegalArgumentException("Status inválidos");
         }
 
@@ -49,7 +49,6 @@ public class Chamado {
             this.tags.add(tag.trim().toLowerCase());
         }
     }
-
 
     public String getCodigo() {
         return codigo;
